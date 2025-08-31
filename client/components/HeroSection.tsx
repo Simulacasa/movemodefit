@@ -17,8 +17,8 @@ const HeroSection: React.FC = () => {
             Treinos inteligentes, orientação precisa e consistência. Sofisticação e bem-estar para sua rotina.
           </p>
           <div className="mt-10 flex items-center gap-4">
-            <CTAButton gaLabel="hero_cta" className="px-7 py-4 text-base">
-              Quero Começar Agora
+            <CTAButton gaLabel="hero_cta" className="px-7 py-4 text-base" asChild>
+              <a href="#cta">Quero Começar Agora</a>
             </CTAButton>
             <a href="#beneficios" className="text-white/70 hover:text-white transition-colors">Ver benefícios</a>
           </div>
