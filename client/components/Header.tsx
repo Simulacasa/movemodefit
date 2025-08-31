@@ -13,7 +13,7 @@ const Header: React.FC = () => {
           <a href="#beneficios" className="hover:text-white transition-colors">Benefícios</a>
           <a href="#depoimentos" className="hover:text-white transition-colors">Prova Social</a>
         </nav>
-        <CTAButton gaLabel="header_cta" asChild={false}>
+        <CTAButton gaLabel="header_cta" asChild>
           <a href="#cta">Quero Começar Agora</a>
         </CTAButton>
       </div>
