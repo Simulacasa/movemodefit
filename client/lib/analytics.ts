@@ -9,7 +9,8 @@ let initialized = false;
 
 export function initGA(measurementId?: string) {
   if (initialized) return;
-  const GA_ID = measurementId || (import.meta as any).env?.VITE_GA_ID || "G-XXXXXXXXXX";
+  const GA_ID =
+    measurementId || (import.meta as any).env?.VITE_GA_ID || "G-XXXXXXXXXX";
 
   // If GA script or gtag already present (e.g., from index.html), just mark initialized
   if (typeof window !== "undefined" && typeof window.gtag === "function") {
@@ -37,6 +38,7 @@ export function initGA(measurementId?: string) {
 }
 
 export function trackEvent(event: string, params?: Record<string, any>) {
-  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  if (typeof window === "undefined" || typeof window.gtag !== "function")
+    return;
   window.gtag("event", event, params || {});
 }

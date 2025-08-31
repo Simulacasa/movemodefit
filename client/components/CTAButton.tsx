@@ -7,7 +7,13 @@ interface CTAButtonProps extends ButtonProps {
   gaLabel?: string;
 }
 
-export const CTAButton: React.FC<CTAButtonProps> = ({ gaLabel = "cta", className, onClick, children, ...props }) => {
+export const CTAButton: React.FC<CTAButtonProps> = ({
+  gaLabel = "cta",
+  className,
+  onClick,
+  children,
+  ...props
+}) => {
   return (
     <Button
       className={cn(
